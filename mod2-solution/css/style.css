@@ -1,0 +1,86 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: Monaco, "Lucida Console", monospace;
+}
+
+body {
+	padding-bottom: 5vh;
+}
+
+h1 {
+	margin: 5%;
+	text-align: center;
+	font-size: 2em;
+}
+
+.menuSet {
+	display: flex;
+	width: 100%;
+	/*padding: 1%;*/
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-content: space-around;
+	row-gap: 2vh;
+}
+
+.menuItem {
+	display: block;
+	position: relative;
+	/*float: left;*/
+	border: 2px black solid;
+	background: #dddddd;
+}
+
+.menuItem h2 {
+	color: white;
+	float: right;
+	border-left: black 2px solid;
+	border-bottom: black 2px solid;
+	width: 8em;
+	text-align: center;
+	padding: 1%;
+	font-size: 1.5em;
+}
+
+.menuItem p {
+	clear: both;
+	padding: 1em;
+}
+
+#menuChicken h2 {
+	background: #d69897;
+}
+
+#menuBeef h2 {
+	background: #c14643;
+}
+
+#menuSushi h2 {
+	background: #e6d298;
+}
+
+/* desktop */
+@media (min-width: 992px) { 
+	.col-lg-4 {
+		width: 29.33%;
+	}
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-6 {
+		width: 46%;
+	}
+
+	.col-md-12 {
+		width: 96%;
+	}
+}
+
+/* mobile */
+@media (max-width: 767px) {
+	.col-sm-12 {
+		width: 96%;
+	}
+}
